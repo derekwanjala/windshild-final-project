@@ -1,0 +1,141 @@
+{% load meta %}
+{% load static %}
+
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.png in the root directory -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'img/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="{% static 'img/apple-touch-icon.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="{% static 'img/apple-touch-icon-57x57.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="{% static 'img/apple-touch-icon-72x72.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="{% static 'img/apple-touch-icon-76x76.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="{% static 'img/apple-touch-icon-114x114.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="{% static 'img/apple-touch-icon-120x120.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="{% static 'img/apple-touch-icon-144x144.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="{% static 'img/apple-touch-icon-152x152.png' %}"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'img/apple-touch-icon-180x180.png' %}"
+    />
+    <!-- Font Icons css -->
+    <link rel="stylesheet" href="{% static 'css/font-icons.css' %}">
+    <!-- plugins css -->
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+    {% block meta %}
+    <title>Nairobi&#39;s Number One Windshield Repair Services | Windshild Autoglass Limited</title>
+    <link rel="canonical" href="https://www.windshildautoglass.com{{request.path}}">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nairobi&#39;s Number One Windshield Repair Services | Windshild Autoglass Limited" />
+    <meta property="og:description" content="Windshild Autoglass Limited, your reliable windscreen repair in Nairobi." />
+    <meta property="og:url" content="https://windshildautoglass.com/" />
+    <meta property="og:site_name" content="QuickPay Credit Limited" />
+    <meta property="article:publisher" content="https://www.facebook.com/windshildautoglass" />
+    <meta property="og:image" content="https://windshildautoglass.com/static" />
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="959" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@windshildautoglass" />
+    {% endblock meta %}
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W7S8FZN');</script>
+  <!-- End Google Tag Manager -->
+
+  {% include 'structured_data.html' %}
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+
+    {% include 'navbar.html' %}
+
+    <div class="ltn__utilize-overlay"></div>
+
+    {% block content %}
+    
+    
+    {% endblock content %}
+
+    {% include 'footer.html' %}
+
+</div>
+<!-- Body main wrapper end -->
+
+    <!-- preloader area start -->
+    <div class="preloader d-none" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- All JS Plugins -->
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <!-- Main JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+  
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block meta %}
+		<title>{{ service.title }} | Windshild Autoglass Limited</title>
+		<link rel="canonical" href="https://www.windshildautoglass.com{{request.path}}">
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Nairobi&#39;s Number One Windshield Repair Services | Windshild Autoglass Limited" />
+		<meta property="og:description" content="Windshild Autoglass Limited, your reliable windscreen repair in Nairobi." />
+		<meta property="og:url" content="https://windshildautoglass.com/" />
+		<meta property="og:site_name" content="QuickPay Credit Limited" />
+		<meta property="article:publisher" content="https://www.facebook.com/windshildautoglass" />
+		<meta property="og:image" content="https://windshildautoglass.com/static" />
+		<meta property="og:image:width" content="960" />
+		<meta property="og:image:height" content="959" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@windshildautoglass" />
+{% endblock meta %}
+
+{% block content %}
+
+    <!-- BREADCRUMB AREA START -->
+    <div class="ltn__breadcrumb-area ltn__breadcrumb-area-2 ltn__breadcrumb-color-white bg-overlay-theme-black-90 bg-image" data-bs-bg="img/bg/9.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__breadcrumb-inner ltn__breadcrumb-inner-2 justify-content-between">
+                        <div class="section-title-area ltn__section-title-2">
+                            <h1 class="section-title white-color">{{ service.title }}</h1>
+                        </div>
+                        <div class="ltn__breadcrumb-list">
+                            <ul>
+                                <li><a href="{% url 'home:home' %}">Home</a></li>
+                                <li><a href="{% url 'windshild' %}">Service</a></li>
+                                <li>{{ service.title }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BREADCRUMB AREA END -->
+
+    <!-- PAGE DETAILS AREA START (service-details) -->
+    <div class="ltn__page-details-area ltn__service-details-area mb-105">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__page-details-inner ltn__service-details-inner">
+                        <!-- <div class="ltn__blog-img">
+                            <img src="img/service/21.jpg" alt="Image">
+                        </div> -->
+                        <h1 class="section-title">{{ service.title }}<span>.</span></h1>
+                        <p>{{ service.detail | safe }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PAGE DETAILS AREA END -->
+
+{% endblock content %}
